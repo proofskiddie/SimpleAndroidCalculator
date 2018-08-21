@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.purdue.kidd9.cs180.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:id="@+id/Display"
+        android:textIsSelectable="false"
+        android:layout_alignTop="@+id/delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/divide"
+        android:layout_toStartOf="@+id/divide" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:text="Delete"
+        android:id="@+id/delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="delete"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="1"
+        android:id="@+id/number1"
+        android:layout_below="@+id/Display"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:onClick="input_1"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="2"
+        android:id="@+id/number2"
+        android:layout_alignTop="@+id/number1"
+        android:layout_toRightOf="@+id/number1"
+        android:layout_toEndOf="@+id/number1"
+        android:textStyle="bold"
+        android:onClick="input_2"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="3"
+        android:id="@+id/number3"
+        android:layout_alignTop="@+id/number2"
+        android:layout_toRightOf="@+id/number2"
+        android:layout_toEndOf="@+id/number2"
+        android:textStyle="bold"
+        android:onClick="input_3"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="6"
+        android:id="@+id/number6"
+        android:layout_below="@+id/number2"
+        android:layout_toRightOf="@+id/number2"
+        android:layout_toEndOf="@+id/number2"
+        android:textStyle="bold"
+        android:onClick="input_6"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="5"
+        android:id="@+id/number5"
+        android:layout_below="@+id/number2"
+        android:layout_alignLeft="@+id/number2"
+        android:layout_alignStart="@+id/number2"
+        android:textStyle="bold"
+        android:onClick="input_5"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="4"
+        android:id="@+id/number4"
+        android:layout_below="@+id/number1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:onClick="input_4"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="8"
+        android:id="@+id/number8"
+        android:layout_below="@+id/number6"
+        android:layout_alignLeft="@+id/number5"
+        android:layout_alignStart="@+id/number5"
+        android:textStyle="bold"
+        android:onClick="input_8"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="7"
+        android:id="@+id/number7"
+        android:layout_alignTop="@+id/number8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:onClick="input_7"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="9"
+        android:id="@+id/number9"
+        android:layout_alignTop="@+id/number8"
+        android:layout_alignLeft="@+id/number6"
+        android:layout_alignStart="@+id/number6"
+        android:textStyle="bold"
+        android:onClick="input_9"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="/"
+        android:id="@+id/divide"
+        android:layout_alignTop="@+id/number3"
+        android:layout_toRightOf="@+id/number3"
+        android:layout_toEndOf="@+id/number3"
+        android:textSize="18dp"
+        android:onClick="opDivide"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="*"
+        android:id="@+id/multiply"
+        android:layout_below="@+id/number3"
+        android:layout_toRightOf="@+id/number6"
+        android:layout_toEndOf="@+id/number6"
+        android:textSize="18dp"
+        android:onClick="opMulti"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:id="@+id/subtract"
+        android:layout_alignTop="@+id/number9"
+        android:layout_toRightOf="@+id/number9"
+        android:layout_toEndOf="@+id/number9"
+        android:textSize="18dp"
+        android:onClick="opSub"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:id="@+id/addition"
+        android:layout_below="@+id/number9"
+        android:layout_toRightOf="@+id/number9"
+        android:layout_toEndOf="@+id/number9"
+        android:textSize="18dp"
+        android:onClick="opPlus"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="="
+        android:id="@+id/equals"
+        android:layout_alignTop="@+id/addition"
+        android:layout_toLeftOf="@+id/addition"
+        android:layout_toStartOf="@+id/addition"
+        android:textSize="18dp"
+        android:onClick="equal"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="0"
+        android:id="@+id/number0"
+        android:layout_alignTop="@+id/equals"
+        android:layout_alignRight="@+id/number8"
+        android:layout_alignEnd="@+id/number8"
+        android:textStyle="bold"
+        android:onClick="input_0"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:text="."
+        android:id="@+id/decimal"
+        android:layout_alignTop="@+id/number0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:onClick="dot"/>
+</RelativeLayout>
